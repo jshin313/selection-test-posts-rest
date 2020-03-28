@@ -32,5 +32,6 @@ http://localhost:5000/posts?searchTitle=RNA
 http://localhost:5000/posts?searchBody=biology 
 
 # Searches for all instances where "hello" is in the body or title (Case insensitive)
-http://localhost:5000/posts?search=hello ```
+http://localhost:5000/posts?search=hello 
+```
 
