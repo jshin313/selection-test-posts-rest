@@ -47,7 +47,7 @@ class Posts(Resource):
 			searchQuery = args['searchTitle']
 			query = conn.execute("""SELECT * FROM posts WHERE title LIKE '%'||?||'%'""", (searchQuery, ))
 		elif args.get('searchBody') is not None:
-			searchQuery = args['searchTitle']
+			searchQuery = args['searchBody']
 			query = conn.execute("""SELECT * FROM posts WHERE body LIKE '%'||?||'%'""", (searchQuery, ))
 
 		# Return formatted as json cause why not? Most REST APIs I've seen use JSON
